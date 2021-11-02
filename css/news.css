@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* table container */
+.table_container table thead tr th:first-child {
+  width: 5%;
+  text-align: center;
+  padding: 0;
+}
+.table_container table tbody tr td:first-child {
+  text-align: center;
+}
+
+.keyword_input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+input.checkbox {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+input.checkbox:checked {
+  background: var(--main-color);
+}
+
+.btn_wrap {
+  text-align: right;
+  margin-bottom: 2rem;
+}
+.btn_wrap button {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  color: var(--white);
+  margin-right: 5px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+.btn_wrap button:hover {
+  background: var(--sub-color);
+}
+.btn_wrap button:last-child {
+  margin-right: 0;
+}
+
+.form_wrap form div {
+  flex-direction: row;
+  align-items: center;
+}
+.form_wrap form div label {
+  width: 100%;
+  max-width: 15rem;
+  text-align: left;
+}
+.form_wrap form div textarea {
+  width: 100%;
+  height: 300px;
+  padding: 1rem;
+  resize: none;
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 786px) {
+  .table_container table {
+    border: none;
+  }
+  .table_container table thead {
+    display: block;
+  }
+  .table_container table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .table_container table thead tr th:first-child {
+    width: 10%;
+  }
+  .table_container table tbody {
+    display: block;
+  }
+  .table_container table tbody tr {
+    display: block;
+    margin-bottom: 5rem;
+    border: none;
+  }
+  .table_container table tbody tr td {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    border-right: none;
+    border-bottom: 1px solid #dedede;
+  }
+  .table_container table tbody tr td:first-child {
+    border-top: 1px solid #dedede;
+  }
+  .table_container table tbody tr td:nth-of-type(2)::before {
+    content: "제목";
+    padding-right: 1rem;
+    font-weight: 500;
+  }
+  .table_container table tbody tr td:nth-of-type(3)::before {
+    content: "작성자";
+    font-weight: 500;
+    padding-right: 1rem;
+  }
+  .table_container table tbody tr td:nth-of-type(4)::before {
+    content: "키워드";
+    font-weight: 500;
+    padding-right: 1rem;
+  }
+  .table_container table tbody tr td:nth-of-type(5)::before {
+    content: "조회";
+    font-weight: 500;
+    padding-right: 1rem;
+  }
+  .table_container table tbody tr td:nth-of-type(6)::before {
+    content: "작성일시";
+    font-weight: 500;
+    padding-right: 1rem;
+  }
+  .table_container table tbody tr td.over {
+    padding: 2rem 1rem;
+  }
+
+  .form_wrap form div label {
+    max-width: 11rem;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form_wrap form div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

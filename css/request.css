@@ -1,0 +1,143 @@
+@charset "UTF-8";
+.content_wrap {
+  margin-bottom: 4rem;
+}
+.content_wrap .content {
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+.content_wrap .content ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 1rem;
+  border-bottom: 1px solid var(--gray);
+  box-sizing: border-box;
+}
+.content_wrap .content ul li {
+  width: calc(100% / 4);
+  text-align: left;
+  font-size: 1.6rem;
+}
+.content_wrap .content ul li:nth-child(odd) {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.content_wrap .content ul.two {
+  justify-content: flex-start;
+}
+.content_wrap .content ul.row {
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 2rem;
+}
+.content_wrap .content ul.row li {
+  width: 100%;
+}
+.content_wrap .content ul.row li a {
+  color: var(--main-color);
+}
+.content_wrap .content ul.row li a:hover {
+  color: var(--sub-color);
+}
+.content_wrap .content ul.row textarea {
+  width: 100%;
+  height: 30rem;
+  resize: none;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding: 1rem;
+  border-color: rgba(118, 118, 118, 0.3);
+  box-sizing: border-box;
+}
+
+.emroll_btn {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--white);
+  background: var(--main-color);
+  padding: 1.8rem 4.2rem;
+  margin: 4rem 0 2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.emroll_btn:hover {
+  background: var(--sub-color);
+}
+
+@media screen and (max-width: 786px) {
+  .content_wrap .content ul {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .content_wrap .content ul li {
+    width: 100%;
+    font-size: 1.7rem;
+  }
+  .content_wrap .content ul li:nth-child(odd) {
+    font-size: 2rem;
+  }
+
+  .table_container table {
+    border: none;
+  }
+  .table_container table thead {
+    display: block;
+  }
+  .table_container table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .table_container table thead tr th:first-child {
+    width: 10%;
+  }
+  .table_container table tbody {
+    display: block;
+  }
+  .table_container table tbody tr {
+    display: block;
+    margin-bottom: 5rem;
+    border: none;
+  }
+  .table_container table tbody tr td {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    border-right: none;
+    border-bottom: 1px solid #dedede;
+  }
+  .table_container table tbody tr td:first-child {
+    border-top: 1px solid #dedede;
+  }
+  .table_container table tbody tr td:nth-of-type(1)::before {
+    content: "제목";
+    padding-right: 1rem;
+    font-weight: 500;
+  }
+  .table_container table tbody tr td:nth-of-type(2)::before {
+    content: "접수자";
+    font-weight: 500;
+    padding-right: 1rem;
+  }
+  .table_container table tbody tr td:nth-of-type(4)::before {
+    content: "접수일시";
+    font-weight: 500;
+    padding-right: 1rem;
+  }
+  .table_container table tbody tr td:nth-of-type(5)::before {
+    content: "답변상태";
+    font-weight: 500;
+    padding-right: 1rem;
+  }
+  .table_container table tbody tr td.over {
+    padding: 2rem 1rem;
+  }
+
+  .form_wrap form div label {
+    max-width: 11rem;
+    font-size: 2rem;
+  }
+}

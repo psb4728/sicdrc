@@ -1,0 +1,86 @@
+@charset "UTF-8";
+.form_wrap {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.form_wrap form div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 1rem;
+  margin-bottom: 3rem;
+}
+.form_wrap form div label {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.form_wrap form div input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 786px) {
+  .table_container table {
+    border: none;
+  }
+  .table_container table thead {
+    display: block;
+  }
+  .table_container table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .table_container table thead tr th:first-child {
+    width: 10%;
+  }
+  .table_container table tbody {
+    display: block;
+  }
+  .table_container table tbody tr {
+    display: block;
+    margin-bottom: 5rem;
+    border: none;
+  }
+  .table_container table tbody tr td {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    border-right: none;
+    border-bottom: 1px solid #dedede;
+  }
+  .table_container table tbody tr td:first-child {
+    border-top: 1px solid #dedede;
+  }
+  .table_container table tbody tr td:nth-of-type(2)::before {
+    content: "제목";
+    padding-right: 1rem;
+    font-weight: 500;
+  }
+  .table_container table tbody tr td:nth-of-type(3)::before {
+    content: "접수자";
+    font-weight: 500;
+    padding-right: 1rem;
+  }
+  .table_container table tbody tr td:nth-of-type(4)::before {
+    content: "접수일시";
+    font-weight: 500;
+    padding-right: 1rem;
+  }
+  .table_container table tbody tr td:nth-of-type(5)::before {
+    content: "답변상태";
+    font-weight: 500;
+    padding-right: 1rem;
+  }
+  .table_container table tbody tr td.over {
+    padding: 2rem 1rem;
+  }
+
+  .form_wrap form div label {
+    max-width: 11rem;
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,66 @@
+<ul>
+  <li>
+    <a href="#">
+      <span class="icon"><img src="../image/mini_logo.svg" alt=""></span>
+      <span class="title">SICDRC</span>
+    </a>
+  </li>
+  <li>
+    <a href="/customer/customer_form.html" title="관리자 추가">
+      <span class="icon"><i class="xi-user-plus"></i></span>
+      <span class="title">관리자 추가</span>
+    </a>
+  </li>
+  <li>
+    <a href="/request/request_list.html" title="피해구제접수 내역">
+      <span class="icon"><i class="xi-paper"></i></span>
+      <span class="title">피해 구제 접수 내역</span>
+    </a>
+  </li>
+  <li>
+    <a href="/happycall/happycall.html" title="해피콜 내역">
+      <span class="icon"><i class="xi-call"></i></span>
+      <span class="title">해피콜 내역</span>
+    </a>
+  </li>
+  <li>
+    <a href="/news/news_list.html" title="유사투자자문업 소식">
+      <span class="icon"><i class="xi-help"></i></span>
+      <span class="title">유사투자자문업 소식</span>
+    </a>
+  </li>
+  <li>
+    <a href="/news/news_form.html" title="유사투자자문업 소식작성">
+      <span class="icon"><i class="xi-pen"></i></span>
+      <span class="title">유사투자자문업 소식 작성</span>
+    </a>
+  </li>
+  <li>
+    <a href="/convention/convention_list.html" title="협약사 리스트">
+      <span class="icon"><i class="xi-list"></i></span>
+      <span class="title">협약사 리스트</span>
+    </a>
+  </li>
+  <li>
+    <a href="/convention/convention_form.html" title="협약사 등록">
+      <span class="icon"><i class="xi-document"></i></span>
+      <span class="title">협약사 등록</span>
+    </a>
+  </li>
+</ul>
+
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+  $(function() {
+	// 페이지 이동시 해당 url에 메뉴 active	
+	$(function () {
+    var url = window.location.pathname,
+    urlRegExp = new RegExp(url.replace(/\/$/, '') + "$");  
+      $('.navigation > ul > li a').each(function () {
+        if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
+          $(this).parents('li').addClass('active');
+        }
+      });
+  });
+});
+</script>

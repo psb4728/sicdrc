@@ -1,0 +1,40 @@
+@charset "UTF-8";
+.btn_wrap .new_btn {
+  padding: 0;
+}
+.btn_wrap .new_btn a {
+  padding: 1rem 1.5rem;
+  color: var(--white);
+}
+
+@media screen and (max-width: 786px) {
+  .table_container table tbody tr {
+    margin-bottom: 5rem;
+  }
+  .table_container table tbody tr td:first-child {
+    border-top: 1px solid #dedede;
+  }
+  .table_container table tbody tr td:nth-of-type(2)::before {
+    content: "회사명";
+    padding-right: 1rem;
+    font-weight: 500;
+  }
+  .table_container table tbody tr td:nth-of-type(3)::before {
+    content: "홈페이지주소";
+    font-weight: 500;
+    padding-right: 1rem;
+  }
+  .table_container table tbody tr td:nth-of-type(4)::before {
+    content: "등록자";
+    font-weight: 500;
+    padding-right: 1rem;
+  }
+  .table_container table tbody tr td:nth-of-type(5)::before {
+    content: "등록일시";
+    font-weight: 500;
+    padding-right: 1rem;
+  }
+  .table_container table tbody tr td.over {
+    padding: 2rem 1rem;
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=yes" name="viewport" />
+  <meta name="author" content="31system" />
+  <meta name="description" content="안녕하세요 유사투자 소비자 피해구제 센터 관리자 페이지" />
+  <meta name="Keywords" content="유사투자 소비자 피해구제 센터, 피해자, 구제센터, 피해자 구제센터, 소비자 피해, 유사투자 피해, 유사투자 피해 분쟁, 유사투자자문업 소식" />
+  <title>유사투자 소비자 피해구제 센터 관리자 페이지</title>
+
+  <!-- og -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="유사투자 소비자 피해구제 센터 관리자 페이지" />
+  <meta property="og:title" content="유사투자 소비자 피해구제 센터 관리자 페이지" />
+  <meta property="og:description" content="안녕하세요 유사투자 소비자 피해구제 센터 관리자 페이지 입니다." />
+  <meta property="og:url" content="#" />
+  <meta property="og:image" content="./images/kakao_img.png" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="400" />
+
+  <!-- twitter -->
+  <meta name="twitter:title" content="유사투자 소비자 피해구제 센터 관리자 페이지" />
+  <meta name="twitter:description" content="안녕하세요 유사투자 소비자 피해구제 센터 관리자 페이지 입니다." />
+  <meta name="twitter:url" content="#" />
+  <meta name="twitter:image" content="./images/kakao_img.png" />
+
+  <!-- Faivicon -->
+  <link rel="icon" type="image/png" href="../image/favicon.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/customer.css">
+  <link rel="stylesheet" href="../css/news.css">
+
+  <!-- jQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <!-- Js -->
+  <script src="../js/common.js" defer></script>
+</head>
+<body>
+  <div class="content_body">
+    <!-- slid_menu -->
+    <nav id="slid_menu" class="navigation"></nav>
+
+    <main class="main">
+      <!-- topbar -->
+      <div class="topbar" id="topbar"></div>
+
+      <article class="content_container">
+        <div class="content_wrap">
+          <h2 class="tit">소비자분쟁 협약사 등록</h2>
+          <div class="form_wrap">
+            <form action="#" method="post">
+              <div>
+                <label>협력사명</label>
+                <input type="text" name="title" id="" required>
+              </div>
+              <div>
+                <label>홈페이지URL</label>
+                <input type="text" name="url" id="">
+              </div>
+              <div>
+                <label>작성자</label>
+                <input type="text" name="user_name" id="" required>
+              </div>
+              <div>
+                <label for="customer_pw">대표이미지</label>
+                <input type="file">
+              </div>
+
+              <button class="form_btn">등록</button>
+            </form>
+          </div>
+        </div>
+      </article>
+
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer"></footer>
+
+  <script type="text/javascript">
+    $(function () {
+      $("#slid_menu").load("../common/header.html");
+      $("#topbar").load("../common/topbar.html");
+      $("#footer").load("../common/footer.html");
+    });
+  </script>
+</body>
+</html>

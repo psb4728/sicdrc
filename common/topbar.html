@@ -1,0 +1,42 @@
+<div class="toggle">
+  <i class="xi-bars"></i>
+</div>
+<!-- search -->
+<div class="user_info">
+  <i class="xi-user user_icon"></i>
+  <div class="info_box">
+    <ul>
+      <li><a href="/customer/mypage.html">회원정보 수정</a></li>
+      <li class="logout"><a href="#">로그아웃</a></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  // menu toggle
+  const toggle = document.querySelector('.toggle');
+  const navigation = document.querySelector('.navigation');
+  const main = document.querySelector('.main');
+  const footer = document.querySelector('.footer');
+
+  toggle.addEventListener('click', function() {
+    navigation.classList.toggle('active');
+    main.classList.toggle('active');
+    footer.classList.toggle('active');
+  });
+
+  // user icon toggle
+  const userIcon = document.querySelector('.user_icon');
+  const infoBox = document.querySelector('.info_box');
+      
+  userIcon.addEventListener('click', function() {
+    infoBox.classList.toggle('show');
+  });
+
+  // logout
+  const logout = document.querySelector('.logout');
+  logout.addEventListener('click', function() {
+    alert('로그아웃 되었습니다.');
+  });
+
+</script>
